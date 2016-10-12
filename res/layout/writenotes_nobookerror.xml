@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+     xmlns:android="http://schemas.android.com/apk/res/android">
+     <ImageView 
+         android:layout_width="120dp"
+         android:layout_height="120dp"
+         android:layout_marginTop="60dp"
+         android:layout_marginBottom="20dp"
+         android:src="@drawable/u20"
+         android:scaleType="fitXY"
+         android:layout_gravity="center_horizontal"/>
+    <TextView 
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:text="你还没有漂流过任何图书哦\n赶紧去预约借书吧"
+        android:gravity="center_horizontal"
+        android:textSize="22sp"/>
+    <Button 
+        android:layout_marginTop="20dp"
+        android:id="@+id/drifnotesactivityerror_button"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:text="确定"
+        android:textSize="35dp"
+        android:textColor="#ffffff"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/shape_drifnoteerror"/>"
+</LinearLayout>

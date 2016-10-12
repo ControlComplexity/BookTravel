@@ -1,0 +1,177 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/MySearchScroll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:id="@+id/linear_all"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/l1"
+                android:layout_width="match_parent"
+                android:layout_height="45dp" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="left"
+                    android:src="@drawable/ditusousuo" >
+                </ImageView>
+
+                <TextView
+                    android:layout_width="310dp"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:text="漂流岛"
+                    android:textColor="#000000"
+                    android:textSize="15dip" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="right"
+                    android:src="@drawable/sousuo" >
+                </ImageView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_top"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_below="@id/l1"
+               
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                
+   <com.application.booktravel.user_defined.DriftLandBannerLayout
+        android:id="@+id/banner2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:id="@+id/imageview1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+           />
+
+        <ImageView
+             android:scaleType="fitXY"
+            android:id="@+id/imageview2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+             />
+
+        <ImageView
+             android:scaleType="fitXY"
+            android:id="@+id/imageview3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+           />
+
+        <ImageView
+             android:scaleType="fitXY"
+            android:id="@+id/imageview4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            />
+    </com.application.booktravel.user_defined.DriftLandBannerLayout>
+                
+                
+                
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/category_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/linear_top"
+                android:background="#FFFFFF"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/linearLayout1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:background="#FFFFFF" 
+                    android:orientation="horizontal">
+
+                    <!--
+                    <TextView
+                        android:id="@+id/tv_youngfootable"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:text="智能推荐"
+                        android:textColor="#579908"
+                        android:textSize="15.0dip" />
+
+                    -->
+
+                    <Spinner                     
+                      
+                        android:id="@+id/sp_zhinengtuijian"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                          android:layout_weight="1.0"
+                       >
+                    </Spinner>
+
+                    
+                    
+                    <Spinner                     
+                   
+                        android:id="@+id/sp_quancheng"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                          android:layout_weight="1.0"
+                       >
+                    </Spinner>
+                    
+                    
+                    <Spinner                     
+                      
+                        android:id="@+id/sp_fengge"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                          android:layout_weight="1.0"
+                       >
+                    </Spinner>
+                  
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_bg"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/aaa"
+                    android:orientation="vertical" >
+                </LinearLayout>
+            </LinearLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/view_pager"
+                android:layout_width="fill_parent"
+                android:layout_height="200dp"
+                android:layout_below="@+id/category_layout" />
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,94 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/linear_top"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+			
+            <include layout="@layout/indexsearch_bar"></include>"
+
+            <!-- 我的书籍点击事件 -->
+
+            <com.application.booktravel.user_defined.IndexBannerLayout
+                android:id="@+id/indexbanner2"
+                android:layout_width="fill_parent"
+                android:layout_height="130dp" >
+
+                <ImageView
+                    android:id="@+id/indeximageview1"
+                    style="@style/IndexImageview"
+                  />
+
+                <ImageView
+                    android:id="@+id/indeximageview2"
+                    style="@style/IndexImageview"/>
+
+                <ImageView
+                    android:id="@+id/indeximageview3"
+                     style="@style/IndexImageview"/>
+
+                <ImageView
+                    android:id="@+id/indeximageview4"
+                     style="@style/IndexImageview" />
+            </com.application.booktravel.user_defined.IndexBannerLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/indexpiaoliubiji"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="漂流笔记" >
+            </Button>
+
+            <Button
+                android:id="@+id/indexjiehuanshu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="借还书" >
+            </Button>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="漂流笔记"
+            android:textSize="20sp" >
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="最热更新"
+            android:textSize="14sp" >
+        </TextView>
+
+       <com.application.booktravel.user_defined.MyListView1 
+             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@id/android:list"
+           ></com.application.booktravel.user_defined.MyListView1>
+    </LinearLayout>
+
+</ScrollView>
